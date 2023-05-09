@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="217dp"
+        android:layout_height="156dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/allura"
+        android:text="Add Category "
+        android:textAlignment="center"
+        android:textColor="#C41E3A"
+        android:textSize="65dp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCategory"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        app:cardCornerRadius="150dp"
+        app:cardMaxElevation="5dp"
+        android:layout_below="@id/textView"
+        >
+
+        <ImageView
+            android:id="@+id/imgCatgory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="215dp" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/cardCategory"
+        android:layout_alignBottom="@id/cardCategory"
+        android:layout_marginRight="-38dp"
+        android:onClick="pickImage"
+        android:src="@drawable/cameraicon" />
+
+    <TextView
+        android:id="@+id/lblcategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="150dp"
+        android:text="Category name "
+        android:textColor="#C41E3A"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@id/cardCategory"/>
+
+    <EditText
+        android:id="@+id/txtcategoryname"
+        android:layout_width="201dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/lblcategory"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/lblcategory"
+
+        android:ems="10"
+        android:hint="Category Name"
+        android:inputType="textPersonName"
+        android:textColor="#000"
+        android:textColorHint="#000" />
+
+    <android.widget.Button
+        android:id="@+id/ADD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtcategoryname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="-94dp"
+        android:background="@drawable/backgroundgradient"
+        android:elevation="5dp"
+        android:fontFamily="@font/allura"
+        android:onClick="addcategory"
+        android:text="ADD"
+        android:textColor="#C41E3A"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

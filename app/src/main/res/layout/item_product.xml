@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:textSize="35dp"
+    android:textAlignment="textStart"
+    android:text="name"
+    android:fontFamily="@font/acme"
+    android:id="@+id/txtprodName"
+    android:paddingLeft="17dp"
+    android:layout_marginTop="5dp"
+    android:textColor="#782019"/>
+    <TextView
+        android:layout_below="@id/txtprodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="29dp"
+        android:textAlignment="textStart"
+        android:text="name"
+        android:fontFamily="@font/acme"
+        android:id="@+id/txtprodprice"
+        android:paddingLeft="17dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#098555"/>
+    <TextView
+
+        android:layout_below="@id/txtprodprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textStyle="italic"
+        android:textSize="26dp"
+        android:textAlignment="center"
+        android:text="name"
+        android:fontFamily="@font/acme"
+        android:id="@+id/txtprodCode"
+        android:paddingLeft="17dp"
+        android:layout_marginTop="-10dp"
+        android:textColor="@color/black"/>
+
+    <View
+        android:layout_below="@id/txtprodCode"
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:layout_marginBottom="7dp"/>
+
+</RelativeLayout>
