@@ -12,3 +12,5 @@ This feature enables users to scan product barcodes or QR codes using their devi
 The app utilizes barcode and QR code scanning libraries to process the scanned codes and retrieve product information.
 This technology simplifies the process of adding purchases to the app by automatically fetching product details,
 such as name, price, and description, based on the scanned code.
+
+<span><h1>Demo :</h1>https://youtu.be/hyBYXZzanMM</span>
